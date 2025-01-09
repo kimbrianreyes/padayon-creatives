@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/x-icon" href="img/padayolnogo.png" />
+
+    <link rel="shortcut icon" href="img/fav.png" />
+    <meta name="author" content="codepixer" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="UTF-8" />
+    <title>Freelancer Profile</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <style>
+    .fixed-size {
+      height: 400px;
+      object-fit: cover;
+    }
+    .nav-menu li a:hover,
+    .nav-menu .menu-active a {
+      background-color: #2e261e;
+      color: white !important;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding-top: 60px;
+    }
+    .modal-content {
+      background-color: #e9e3df;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      position: relative;
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn-custom {
+      background-color: #faf9f7;
+      border-color: #fff;
+      color: #000;
+    }
+    .btn-custom:hover {
+      background-color: #5a4733;
+      border-color: #fff;
+      color: #fff;
+    }
+    .logo-text {
+      font-size: 1.1rem; /* Adjust the font size as needed */
+      margin-left: 0.5rem; /* Adjust the margin as needed */
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .payment-method {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .payment-method img {
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <header id="header" id="home">
+      <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div id="logo" class="d-flex align-items-center">
+            <a href="index.html"
+              ><img src="img/padayolnogo.png" alt="" title=""
+            /></a>
+            <span class="logo-text">PADAYON CREATIVES</span>
+          </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li class="menu-active">
+                <a href="freelancers.html">Freelancers</a>
+              </li>
+              <li><a href="blog-home.html">Blog</a></li>
+              <!-- <li><a href="contact.html">Contact</a></li> -->
+              <li><a href="#" id="signupBtn">Signup</a></li>
+              <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white">Freelancer Profile</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+    <!-- Modal structure -->
+    <div id="paymentModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closePayment">&times;</span>
+        <h2>Choose Payment Method</h2>
+        <hr />
+        <div class="payment-method">
+          <img
+            src="img/teaching/gcash.png"
+            alt="G-Cash"
+            style="width: 64px; height: 64px"
+          />
+          <span>G-Cash</span>
+        </div>
+        <div class="payment-method">
+          <img
+            src="img/teaching/maya.png"
+            alt="Maya"
+            style="width: 64px; height: 64px"
+          />
+          <span>Maya</span>
+        </div>
+        <div class="payment-method">
+          <img
+            src="img/teaching/bank-transfer.png"
+            alt="Bank Transfer"
+            style="width: 64px; height: 64px"
+          />
+          <span>Bank Transfer</span>
+        </div>
+      </div>
+    </div>
+    <!-- Start post Area -->
+    <section class="post-area section-gap">
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <div class="col-lg-8 post-list">
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img src="img/designer.png" alt="" />
+                <ul class="tags">
+                  <li>
+                    <a href="#">Art</a>
+                  </li>
+                  <li>
+                    <a href="#">Media</a>
+                  </li>
+                  <li>
+                    <a href="#">Design</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="#"><h4>Zariyah Isla Leviste</h4></a>
+                    <h6>Copywriter</h6>
+                  </div>
+                  <ul class="btns">
+                    <li>
+                      <a href="#"><span class="lnr lnr-heart"></span></a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com" target="_blank"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com" target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" id="paymentBtn"
+                        ><i class="fa-solid fa-credit-card"></i>
+                      </a>
+                    </li>
+                    <li><a href="#" id="messageBtn">Message</a></li>
+                  </ul>
+                </div>
+                <p>
+                  I am a creative copywriter skilled in crafting compelling and
+                  engaging content that captures attention and drives action.
+                </p>
+                <h5>Program: Architecture</h5>
+                <p class="address">
+                  <span class="lnr lnr-map"></span> PUP Sta. Mesa
+                </p>
+                <p class="address">
+                  <span class="lnr lnr-database"></span> 1k/hr
+                </p>
+              </div>
+            </div>
+            <div class="single-post job-details">
+              <h4 class="single-title">About Myself</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+            <!-- The Modal -->
+            <div id="messageModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Send a Message</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-custom">Send</button>
+                </form>
+              </div>
+            </div>
+            <!-- Portfolio Image Section -->
+            <h4 class="single-title text-center mt-4">Highlights</h4>
+            <div class="portfolio-image text-center mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="img/design/1.JPG"
+                      alt="Portfolio Image 1"
+                      class="card-img-top img-fluid fixed-size"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="img/design/2.JPG"
+                      alt="Portfolio Image 2"
+                      class="card-img-top img-fluid fixed-size"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="img/design/3.JPG"
+                      alt="Portfolio Image 3"
+                      class="card-img-top img-fluid fixed-size"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 sidebar">
+            <div class="single-slidebar">
+              <h4>Numbers of available freelances</h4>
+              <ul class="cat-list">
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Graphic Designer</p>
+                    <span>17</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Academic Tutor</p>
+                    <span>5</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Creative Writer</p>
+                    <span>13</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Digital Illustrator</p>
+                    <span>6</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Copywriter</p>
+                    <span>7</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Publication Material Designer</p>
+                    <span>7</span></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Language Coach</p>
+                    <span>3</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="single-slidebar">
+              <h4>Freelance Services by Category</h4>
+              <ul class="cat-list">
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Technology</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Media & News</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Digital Products</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Publication Materials</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Creative Writings</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>Tutoring</p></a
+                  >
+                </li>
+                <li>
+                  <a class="justify-content-between d-flex" href="#"
+                    ><p>and many more!</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End post Area -->
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="single-footer-widget">
+              <h6>Padayon Creatives</h6>
+              <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="blog-home.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="single-footer-widget mail-chimp">
+              <h6 class="mb-20">Highlights</h6>
+              <ul class="instafeed d-flex flex-wrap">
+                <li><img src="img/i1.jpg" alt="" /></li>
+                <li><img src="img/i2.jpg" alt="" /></li>
+                <li><img src="img/i3.jpg" alt="" /></li>
+                <li><img src="img/i4.jpg" alt="" /></li>
+                <li><img src="img/i5.jpg" alt="" /></li>
+                <li><img src="img/i6.jpg" alt="" /></li>
+                <li><img src="img/i7.jpg" alt="" /></li>
+                <li><img src="img/i8.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved |
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a href="#" target="_blank">Padayon Creatives</a>
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("messageModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("messageBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Get the modal
+      var paymentModal = document.getElementById("paymentModal");
+
+      // Get the button that opens the modal
+      var paymentBtn = document.getElementById("paymentBtn");
+
+      // Get the <span> element that closes the modal
+      var closePayment = document.getElementById("closePayment");
+
+      // When the user clicks the button, open the modal
+      paymentBtn.onclick = function () {
+        paymentModal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      closePayment.onclick = function () {
+        paymentModal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == paymentModal) {
+          paymentModal.style.display = "none";
+        }
+      };
+    </script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
+    ></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
