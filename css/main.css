@@ -2274,7 +2274,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact-btns,
 .form-area .primary-btn {
   background-image: -moz-linear-gradient(0deg, #e6dacd 0%, #e6dacd 100%);
-  background-image: -webkit-linear-gradient(0deg, #7c5933 0%, #e6dacd 100%);
+  background-image: -webkit-linear-gradient(0deg, #b79c7d 0%, #e6dacd 100%);
   background-image: -ms-linear-gradient(0deg, #5a3d1e 0%, #81582d 100%);
 }
 
@@ -2359,7 +2359,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/header-bg.jpg) center;
+  background: url(../img/headermain.png) center;
   background-size: cover;
 }
 
