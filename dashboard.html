@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
   <head>
+    <link rel="icon" type="image/x-icon" href="img/padayolnogo.png" />
+
     <link rel="icon" type="image/x-icon" href="img/padayon.png" />
     <!-- Mobile Specific Meta -->
     <meta
@@ -18,7 +20,8 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Contacts - Padayon Creativesss</title>
+    <title>Dashboard - Padayon Creativesss</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.2/echarts.min.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -47,6 +50,20 @@
       margin-left: 0.5rem; /* Adjust the margin as needed */
       color: #ffffff;
       font-weight: bold;
+    }
+    .chart-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px;
+    }
+    .chart {
+      width: 100%;
+      height: 300px;
+    }
+    .analytics-area {
+      background-color: #fff;
+      padding: 50px 0;
     }
   </style>
   <body>
@@ -86,95 +103,51 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
-            <h1 class="text-white">Contact Us</h1>
+            <h1 class="text-white">Dashboard</h1>
             <p class="text-white">
               <a href="index.html">Home </a>
               <span class="lnr lnr-arrow-right"></span>
-              <a href="contact.html"> Contact Us</a>
+              <a href="about-us.html"> About Us</a>
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <!-- End banner Area -->
-
-    <!-- Start contact-page Area -->
-    <section class="contact-page-area section-gap">
+    <section
+      class="analytics-area section-gap"
+      style="background-color: #f5ebe0"
+    >
       <div class="container">
-        <div class="row">
-          <div
-            class="map-wrap"
-            style="width: 100%; height: 445px"
-            id="map"
-          ></div>
-          <div class="col-lg-4 d-flex flex-column">
-            <a class="contact-btns" href="#">Submit Your CV</a>
-            <a class="contact-btns" href="#">Post New Job</a>
-            <a class="contact-btns" href="#">Create New Account</a>
+        <h1 class="text-center">Dashboard Analytics</h1>
+        <br />
+        <br />
+        <div class="chart-container">
+          <div id="sales-performance" class="chart">
+            <div class="chart-title">Sales Performance</div>
           </div>
-          <div class="col-lg-8">
-            <form
-              class="form-area"
-              id="myForm"
-              action="mail.php"
-              method="post"
-              class="contact-form text-right"
-            >
-              <div class="row">
-                <div class="col-lg-12 form-group">
-                  <input
-                    name="name"
-                    placeholder="Enter your name"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your name'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
-
-                  <input
-                    name="email"
-                    placeholder="Enter email address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email address'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="email"
-                  />
-
-                  <input
-                    name="subject"
-                    placeholder="Enter your subject"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your subject'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
-                  <textarea
-                    class="common-textarea mt-10 form-control"
-                    name="message"
-                    placeholder="Messege"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Messege'"
-                    required=""
-                  ></textarea>
-                  <button
-                    class="primary-btn mt-20 text-white"
-                    style="float: right"
-                  >
-                    Send Message
-                  </button>
-                  <div class="mt-20 alert-msg" style="text-align: left"></div>
-                </div>
-              </div>
-            </form>
+          <div id="market-trends" class="chart">
+            <div class="chart-title">Market Trends</div>
+          </div>
+          <div id="customers-per-week" class="chart">
+            <div class="chart-title">Customers Per Week</div>
+          </div>
+          <div id="user-feedback" class="chart">
+            <div class="chart-title">User Feedback</div>
+          </div>
+          <div id="registered-freelancers" class="chart">
+            <div class="chart-title">Registered Freelancers</div>
+          </div>
+          <div id="registered-clients" class="chart">
+            <div class="chart-title">Registered Clients</div>
+          </div>
+          <div id="sales-revenue" class="chart">
+            <div class="chart-title">Sales Revenue</div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End contact-page Area -->
 
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
@@ -182,63 +155,18 @@
         <div class="row">
           <div class="col-lg-3 col-md-12">
             <div class="single-footer-widget">
-              <h6>Top Products</h6>
+              <h6>Padayon Creatives</h6>
               <ul class="footer-nav">
-                <li><a href="#">Managed Website</a></li>
-                <li><a href="#">Manage Reputation</a></li>
-                <li><a href="#">Power Tools</a></li>
-                <li><a href="#">Marketing Service</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="blog-home.html">Blog</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="single-footer-widget newsletter">
-              <h6>Newsletter</h6>
-              <p>
-                You can trust us. we only send promo offers, not a single spam.
-              </p>
-              <div id="mc_embed_signup">
-                <form
-                  target="_blank"
-                  novalidate="true"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                  method="get"
-                  class="form-inline"
-                >
-                  <div class="form-group row" style="width: 100%">
-                    <div class="col-lg-8 col-md-12">
-                      <input
-                        name="EMAIL"
-                        placeholder="Enter Email"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter Email '"
-                        required=""
-                        type="email"
-                      />
-                      <div style="position: absolute; left: -5000px">
-                        <input
-                          name="b_36c4fd991d266f23781ded980_aefe40901a"
-                          tabindex="-1"
-                          value=""
-                          type="text"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12">
-                      <button class="nw-btn primary-btn">
-                        Subscribe<span class="lnr lnr-arrow-right"></span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="info"></div>
-                </form>
-              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-12">
             <div class="single-footer-widget mail-chimp">
-              <h6 class="mb-20">Instragram Feed</h6>
+              <h6 class="mb-20">Highlights</h6>
               <ul class="instafeed d-flex flex-wrap">
                 <li><img src="img/i1.jpg" alt="" /></li>
                 <li><img src="img/i2.jpg" alt="" /></li>
@@ -255,26 +183,224 @@
 
         <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear());
             </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            All rights reserved |
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a href="#" target="_blank">Padayon Creatives</a>
           </p>
           <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-            <a href="#"><i class="fa fa-behance"></i></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://x.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
     </footer>
     <!-- End footer Area -->
+    <script>
+      // 1. Sales Performance
+      const salesPerformance = echarts.init(
+        document.getElementById("sales-performance")
+      );
+      const salesData = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: { type: "shadow" },
+        },
+        xAxis: { type: "category", data: ["Q1", "Q2", "Q3", "Q4"] },
+        yAxis: { type: "value" },
+        series: [
+          {
+            data: [1200, 1500, 1800, 2000],
+            type: "bar",
+            color: "#7c5933", // Updated color
+          },
+        ],
+        title: { text: "Sales Performance", left: "center" },
+      };
+      salesPerformance.setOption(salesData);
+
+      // 2. Market Trends
+      const marketTrends = echarts.init(
+        document.getElementById("market-trends")
+      );
+      const trendsData = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: { type: "line" },
+        },
+        xAxis: { type: "category", data: ["Jan", "Feb", "Mar", "Apr", "May"] },
+        yAxis: { type: "value" },
+        series: [
+          {
+            data: [820, 932, 901, 934, 1290],
+            type: "line",
+            smooth: true,
+            color: "#7c5933", // Updated color
+          },
+        ],
+        title: { text: "Market Trends", left: "center" },
+      };
+      marketTrends.setOption(trendsData);
+
+      // 3. Customers Per Week
+      const customersPerWeek = echarts.init(
+        document.getElementById("customers-per-week")
+      );
+      const customersData = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: { type: "shadow" },
+        },
+        xAxis: {
+          type: "category",
+          data: ["Week 1", "Week 2", "Week 3", "Week 4"],
+        },
+        yAxis: { type: "value" },
+        series: [
+          {
+            data: [150, 200, 250, 300],
+            type: "bar",
+            color: "#7c5933", // Updated color
+          },
+        ],
+        title: { text: "Customers Per Week", left: "center" },
+      };
+      customersPerWeek.setOption(customersData);
+
+      // 4. User Feedback
+      const userFeedback = echarts.init(
+        document.getElementById("user-feedback")
+      );
+      const feedbackData = {
+        tooltip: {
+          trigger: "item",
+          formatter: "{a} <br/>{b}: {c} ({d}%)",
+        },
+        series: [
+          {
+            name: "Feedback",
+            type: "pie",
+            radius: "50%",
+            data: [
+              { value: 40, name: "Positive", itemStyle: { color: "#7c5933" } },
+              { value: 30, name: "Neutral", itemStyle: { color: "#5A4733" } },
+              { value: 30, name: "Negative", itemStyle: { color: "#311E14" } },
+            ],
+          },
+        ],
+        title: { text: "User Feedback", left: "center" },
+      };
+      userFeedback.setOption(feedbackData);
+
+      // 5. Registered Freelancers
+      const registeredFreelancers = echarts.init(
+        document.getElementById("registered-freelancers")
+      );
+      const freelancersData = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: { type: "line" },
+        },
+        xAxis: { type: "category", data: ["Jan", "Feb", "Mar", "Apr", "May"] },
+        yAxis: { type: "value" },
+        series: [
+          {
+            data: [50, 70, 90, 120, 150],
+            type: "line",
+            color: "#7c5933", // Updated color
+          },
+        ],
+        title: { text: "Registered Freelancers", left: "center" },
+      };
+      registeredFreelancers.setOption(freelancersData);
+
+      // 6. Registered Clients
+      const registeredClients = echarts.init(
+        document.getElementById("registered-clients")
+      );
+      const clientsData = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: { type: "shadow" },
+        },
+        series: [
+          {
+            name: "Clients",
+            type: "bar",
+            data: [30, 45, 60, 75, 100],
+            color: "#7c5933", // Updated color
+          },
+        ],
+        xAxis: { type: "category", data: ["Jan", "Feb", "Mar", "Apr", "May"] },
+        yAxis: { type: "value" },
+        title: { text: "Registered Clients", left: "center" },
+      };
+      registeredClients.setOption(clientsData);
+
+      // 7. Sales and Revenue for Freelancers (Radar Chart with Adjusted Spacing)
+      const salesRevenue = echarts.init(
+        document.getElementById("sales-revenue")
+      );
+      const salesRevenueRadarData = {
+        tooltip: {
+          trigger: "item",
+        },
+        radar: {
+          indicator: [
+            { name: "January", max: 800 },
+            { name: "February", max: 800 },
+            { name: "March", max: 800 },
+            { name: "April", max: 800 },
+            { name: "May", max: 800 },
+          ],
+          shape: "circle",
+          radius: "60%", // Adjust the radius of the radar chart
+          center: ["50%", "60%"], // Move the center of the radar chart lower
+        },
+        legend: {
+          data: ["Sales", "Revenue"],
+          bottom: "2%", // Position the legend at the bottom
+          orient: "horizontal", // Horizontal alignment
+          itemWidth: 10,
+          itemHeight: 10,
+        },
+        series: [
+          {
+            name: "Sales vs Revenue",
+            type: "radar",
+            data: [
+              {
+                value: [300, 400, 500, 600, 700], // Sales data
+                name: "Sales",
+                itemStyle: { color: "#311E14" }, // Custom color for Sales
+                lineStyle: { color: "#311E14" }, // Line color for Sales
+              },
+              {
+                value: [250, 350, 450, 550, 650], // Revenue data
+                name: "Revenue",
+                itemStyle: { color: "#5A4733" }, // Custom color for Revenue
+                lineStyle: { color: "#5A4733" }, // Line color for Revenue
+              },
+            ],
+          },
+        ],
+        title: {
+          text: "Sales & Revenue (Radar)",
+          left: "center",
+          top: "10%", // Keep title positioned at the top
+        },
+      };
+
+      salesRevenue.setOption(salesRevenueRadarData);
+    </script>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script
